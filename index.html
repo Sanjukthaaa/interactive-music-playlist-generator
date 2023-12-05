@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="prg2.css">
+  <title>Interactive Playlist Generator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Playlist Generator</h1>
+    <div class="options">
+      <label for="mood">Select Mood:</label>
+      <select id="mood">
+        <option value="happy">Happy</option>
+        <option value="chill">Chill</option>
+        <option value="energetic">Energetic</option>
+      </select>
+
+      <label for="genre">Select Genre:</label>
+      <select id="genre">
+        <option value="pop">Pop</option>
+        <option value="rock">Rock</option>
+        <option value="hip-hop">Hip Hop</option>
+      </select>
+
+      <button onclick="generatePlaylist()"> Generate Playlist</button>
+    </div>
+
+    <div id="playlistContainer">
+      <h2>Your Custom Playlist</h2>
+      <ul id="playlist"></ul>
+    </div>
+  </div>
+
+  <script src="prg5.js"></script>
+</body>
+</html>
